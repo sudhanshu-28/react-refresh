@@ -2,7 +2,6 @@
   "name": "react-refresh",
   "version": "1.0.0",
   "description": "This Module is the refresher for React core concepts",
-  "main": "index.js",
   "scripts": {
     "start": "npx parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
