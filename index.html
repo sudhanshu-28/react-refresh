@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script></script>
   </head>
   <body>
-    <div id="root">Hello World using HTML</div>
+    <div id="root">
+      <h1>Hello World using HTML.</h1>
+    </div>
   </body>
+  <script>
+    const heading = document.createElement("h2");
+    heading.innerHTML = "Hello World using Javascript.";
+
+    const divElement = document.getElementById("root");
+    divElement.appendChild(heading);
+  </script>
 </html>
