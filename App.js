@@ -1,16 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", { id: "heading_1" }, "This is React Project"),
-    React.createElement("h2", { id: "heading_2" }, "React is JS Liberary"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", { id: "heading_3" }, "Heading 3"),
-    React.createElement("h2", { id: "heading_4" }, "Heading 4"),
-  ]),
-]);
+// React Element are equivalent to DOM elements
+const heading = React.createElement(
+  "h1",
+  { id: "heading" },
+  "Heading from createElement"
+);
+
+console.log("heading123 => ", heading);
+
+// JSX - is not HTML in JS. JSX is HTML like syntax
+const jsxHeading = <h1 id="heading">Heading from JSX</h1>;
+console.log("jsxHeading123 => ", heading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(jsxHeading); // render converts obj to HTML
