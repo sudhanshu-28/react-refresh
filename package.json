@@ -1,0 +1,22 @@
+{
+  "name": "react-refresh",
+  "version": "1.0.0",
+  "description": "This Module is the refresher for React core concepts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudhanshu-28/react-refresh.git"
+  },
+  "author": "Sudhanshu Rai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudhanshu-28/react-refresh/issues"
+  },
+  "homepage": "https://github.com/sudhanshu-28/react-refresh#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
