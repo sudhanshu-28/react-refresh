@@ -20,3 +20,7 @@
 - parcel scr/index.html --https
 - parcel src/index.html --lazy
 - Makes Different build / bundles for Dev & PROD
+
+# Create React App
+
+- With this we build our own create react-app
