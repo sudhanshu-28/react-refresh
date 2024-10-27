@@ -7,15 +7,37 @@
     <script></script>
   </head>
   <body>
-    <div id="root">
-      <h1>Hello World using HTML.</h1>
+    <div id="root1">
+      <h1>Hello World using HTML</h1>
     </div>
+    <div id="root2"></div>
   </body>
+  <!-- react.development.js contains React code return in plain Javascript  -->
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <!-- react-dom.development.js is used for DOM operations and updating DOM  -->
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
   <script>
+    // Using Javascript
     const heading = document.createElement("h2");
-    heading.innerHTML = "Hello World using Javascript.";
+    heading.innerHTML = "Hello World using Javascript";
 
-    const divElement = document.getElementById("root");
+    const divElement = document.getElementById("root1");
     divElement.appendChild(heading);
+
+    // Using React
+    const headingWithReact = React.createElement(
+      "h3",
+      {},
+      "Hello World using React"
+    );
+    // If root1 is passed, then ReactDOM will replace all the existing content and render all elements content created in React
+    const root = ReactDOM.createRoot(document.getElementById("root2"));
+    root.render(headingWithReact);
   </script>
 </html>
