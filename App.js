@@ -3,16 +3,11 @@ import ReactDOM from "react-dom/client";
 
 const Title = () => <h1 className="head">Title Component</h1>;
 
-const number = 1000;
-
 // React Functional Component - Function that returns JSZ code is Functional Component
 const HeadingComponent = () => (
   <div className="container">
     {/* Component Composition - It is calling component inside Component  */}
-    {/* <Title /> */}
-
-    <h2>{number}</h2>
-
+    <Title />
     <h1 className="heading">Heading Functional Component</h1>
   </div>
 );
